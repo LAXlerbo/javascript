@@ -56,6 +56,9 @@ module.exports = {
     'require-yield': 0,
     // import sorting
     // http://eslint.org/docs/rules/sort-imports
-    'sort-imports': 0
+    'sort-imports': 0,
+    // enforce spacing around the * in yield* expressions
+    // http://eslint.org/docs/rules/yield-star-spacing
+    'yield-star-spacing': 0
   }
 };
