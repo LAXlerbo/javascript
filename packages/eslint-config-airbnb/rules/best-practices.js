@@ -100,6 +100,9 @@ module.exports = {
     'no-sequences': 2,
     // restrict what can be thrown as an exception
     'no-throw-literal': 2,
+    // disallow unmodified conditions of loops
+    // http://eslint.org/docs/rules/no-unmodified-loop-condition
+    'no-unmodified-loop-condition': 0,
     // disallow usage of expressions in statement position
     'no-unused-expressions': 2,
     // disallow unnecessary .call() and .apply()
