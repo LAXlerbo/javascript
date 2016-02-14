@@ -36,6 +36,9 @@ module.exports = {
     'no-else-return': 2,
     // disallow use of labels for anything other then loops and switches
     'no-labels': [2, { 'allowLoop': false, 'allowSwitch': false }],
+    // disallow Unnecessary Labels
+    // http://eslint.org/docs/rules/no-extra-label
+    'no-extra-label': 0,
     // disallow comparisons to null without a type-checking operator
     'no-eq-null': 0,
     // disallow use of eval()
