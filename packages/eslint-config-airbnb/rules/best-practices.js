@@ -20,6 +20,9 @@ module.exports = {
     'eqeqeq': 2,
     // make sure for-in loops have an if statement
     'guard-for-in': 2,
+    // Blacklist certain identifiers to prevent them being used
+    // http://eslint.org/docs/rules/id-blacklist
+    'id-blacklist': 0,
     // disallow the use of alert, confirm, and prompt
     'no-alert': 1,
     // disallow use of arguments.caller or arguments.callee
