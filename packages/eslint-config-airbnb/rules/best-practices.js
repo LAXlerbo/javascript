@@ -34,8 +34,6 @@ module.exports = {
     'no-div-regex': 0,
     // disallow else after a return in an if
     'no-else-return': 2,
-    // disallow use of labels for anything other then loops and switches
-    'no-labels': [2, { 'allowLoop': false, 'allowSwitch': false }],
     // disallow Unnecessary Labels
     // http://eslint.org/docs/rules/no-extra-label
     'no-extra-label': 0,
@@ -59,6 +57,8 @@ module.exports = {
     'no-invalid-this': 0,
     // disallow usage of __iterator__ property
     'no-iterator': 2,
+    // disallow use of labels for anything other then loops and switches
+    'no-labels': [2, { 'allowLoop': false, 'allowSwitch': false }],
     // disallow unnecessary nested blocks
     'no-lone-blocks': 2,
     // disallow creation of functions within loops
@@ -105,6 +105,9 @@ module.exports = {
     'no-unmodified-loop-condition': 0,
     // disallow usage of expressions in statement position
     'no-unused-expressions': 2,
+    // disallow unused labels
+    // http://eslint.org/docs/rules/no-unused-labels
+    'no-unused-labels': 0,
     // disallow unnecessary .call() and .apply()
     'no-useless-call': 0,
     // disallow use of void operator
