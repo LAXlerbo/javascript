@@ -53,6 +53,9 @@ module.exports = {
     // http://eslint.org/docs/rules/prefer-template
     'prefer-template': 2,
     // disallow generator functions that do not have yield
-    'require-yield': 0
+    'require-yield': 0,
+    // import sorting
+    // http://eslint.org/docs/rules/sort-imports
+    'sort-imports': 0
   }
 };
