@@ -40,8 +40,8 @@
   - Always use JSX syntax.
   - Do not use `React.createElement` unless you're initializing the app from a file that is not JSX.
 
-  - 每个文件只包含一个React组件
-    - 但是[无状态, 或者 Pure 组件](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions) 允许一个文件包含多个组件 eslint: [`react/no-multi-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless).
+  - 每个文件只包含一个React组件。
+    - 但是[无状态, 或者 Pure 组件](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions) 允许一个文件包含多个组件。eslint: [`react/no-multi-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless).
   - 始终使用JSX语法。
   - 不要使用 `React.createElement`方法，除非初始化app的文件不是JSX格式.
 
@@ -49,7 +49,7 @@
 
   - If you have internal state and/or refs, prefer `class extends React.Component` over `React.createClass` unless you have a very good reason to use mixins. eslint: [`react/prefer-es6-class`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md)
 
-  - 如果组件拥有内部的state或者refs的时候，更推荐使用 `class extends React.Component`，除非你有一个非常好的理由要使用mixin. eslint: [`react/prefer-es6-class`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md)
+  - 如果组件拥有内部的state或者refs的时候，更推荐使用 `class extends React.Component`，除非你有一个非常好的理由要使用mixin。 eslint: [`react/prefer-es6-class`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md)
 
     ```javascript
     // bad
@@ -100,7 +100,7 @@
   - **Reference Naming**: Use PascalCase for React components and camelCase for their instances. eslint: [`react/jsx-pascal-case`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md)
 
   - **扩展名**: React组件使用`.jsx`扩展名。
-  - **文件名**: 文件名使用帕斯卡命名。 例如： `ReservationCard.jsx`.
+  - **文件名**: 文件名使用帕斯卡命名。 例如： `ReservationCard.jsx`。
   - **引用命名**: React组件使用帕斯卡命名，引用实例采用骆驼命名。 eslint: [`react/jsx-pascal-case`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md)
     ```javascript
     // bad
@@ -118,7 +118,7 @@
 
   - **Component Naming**: Use the filename as the component name. For example, `ReservationCard.jsx` should have a reference name of `ReservationCard`. However, for root components of a directory, use `index.jsx` as the filename and use the directory name as the component name:
 
-  - **组件命名**: 组件名称应该和文件名一致， 例如： `ReservationCard.jsx` 应该有一个`ReservationCard`的引用名称. 但是, 如果是在目录中的组件， 应该使用 `index.jsx` 作为文件名 并且使用文件夹名称作为组件名：
+  - **组件命名**: 组件名称应该和文件名一致， 例如： `ReservationCard.jsx` 应该有一个`ReservationCard`的引用名称。 但是， 如果是在目录中的组件， 应该使用 `index.jsx` 作为文件名 并且使用文件夹名称作为组件名：
     ```javascript
     // bad
     import Footer from './Footer/Footer';
@@ -152,7 +152,7 @@
 
   - Follow these alignment styles for JSX syntax. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
 
-  - 为JSX语法使用下列的对其方式 eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
+  - 为JSX语法使用下列的对其方式。eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
     ```javascript
     // bad
     <Foo superLongParam="bar"
@@ -181,7 +181,7 @@
 ## 引号
 
   - Always use double quotes (`"`) for JSX attributes, but single quotes for all other JS. eslint: [`jsx-quotes`](http://eslint.org/docs/rules/jsx-quotes)
-  - JSX的属性都采用双引号, 其他的JS都使用单引号. eslint: [`jsx-quotes`](http://eslint.org/docs/rules/jsx-quotes)
+  - JSX的属性都采用双引号, 其他的JS都使用单引号。eslint: [`jsx-quotes`](http://eslint.org/docs/rules/jsx-quotes)
 
   > Why? JSX attributes [can't contain escaped quotes](http://eslint.org/docs/rules/jsx-quotes), so double quotes make conjunctions like `"don't"` easier to type.
   > 为什么这样做？JSX属性 [不能包含转义的引号](http://eslint.org/docs/rules/jsx-quotes), 所以当输入`"don't"`这类的缩写的时候用双引号会更方便。
@@ -318,6 +318,7 @@
   - 在render方法中事件的回调函数，应该在构造函数中进行bind绑定。 eslint: [`react/jsx-no-bind`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
 
   > Why? A bind call in the render path creates a brand new function on every single render.
+  
   > 为什么这样做? 在render方法中的bind调用每次调用render的时候都会创建一个全新的函数。
 
     ```javascript
