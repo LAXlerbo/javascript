@@ -1,5 +1,4 @@
 # Airbnb React/JSX Style Guide
-# Airbnb React/JSX Style Guide
 
 *A mostly reasonable approach to React and JSX*
 *用更合理的方式书写React和JSX*
@@ -318,7 +317,7 @@
   - 在render方法中事件的回调函数，应该在构造函数中进行bind绑定。 eslint: [`react/jsx-no-bind`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
 
   > Why? A bind call in the render path creates a brand new function on every single render.
-  
+
   > 为什么这样做? 在render方法中的bind调用每次调用render的时候都会创建一个全新的函数。
 
     ```javascript
@@ -377,21 +376,6 @@
 ## 排序
   - Ordering for `class extends React.Component`:
   - `class extends React.Component`的顺序:
-
-  1. optional `static` methods
-  1. `constructor`
-  1. `getChildContext`
-  1. `componentWillMount`
-  1. `componentDidMount`
-  1. `componentWillReceiveProps`
-  1. `shouldComponentUpdate`
-  1. `componentWillUpdate`
-  1. `componentDidUpdate`
-  1. `componentWillUnmount`
-  1. *clickHandlers or eventHandlers* like `onClickSubmit()` or `onChangeDescription()`
-  1. *getter methods for `render`* like `getSelectReason()` or `getFooterContent()`
-  1. *Optional render methods* like `renderNavigation()` or `renderProfilePicture()`
-  1. `render`
 
   1. `static`静态方法
   1. `constructor`

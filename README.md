@@ -6,7 +6,7 @@
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Airbnb的编码规范看了让人受益良多。发现它推出了最新的React编码规范，所以第一时间翻译过来，希望对正在使用React的朋友们有所帮助。
-同时还有其他的ES5,ES6的编码规范翻译采用了两个比较火的版本。一个是[!Sivan](https://github.com/sivan)的ES5翻译规范，一个是[!yuche](https://github.com/yuche)的ES6翻译规范。
+同时还有其他的ES5,ES6的编码规范翻译采用了两个比较火的版本。一个是[Sivan](https://github.com/sivan)的ES5翻译规范，一个是[yuche](https://github.com/yuche)的ES6翻译规范。
 
 编码规范列表
  - [React](react/)
