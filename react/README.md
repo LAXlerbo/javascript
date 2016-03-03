@@ -2,7 +2,6 @@
 
 *用更合理的方式书写React和JSX*
 
-## Table of Contents
 ## 目录
   1. [基本规则](#basic-rules)
   1. [Class vs `React.createClass` vs stateless](#class-vs-reactcreateclass-vs-stateless)
